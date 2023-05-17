@@ -7,14 +7,14 @@ class Index extends React.Component {
         return (
             <DefaultLayout title={"Veg Index Page"}>
                 <nav>
-                    <a href="/vegetables/new">Create a New Veggie</a>
+                    <a href="/veggies/new">Create a New Veggie</a>
                 </nav>
                 <ul>
                     {veg.map((veggie, i) => {
                         return (
                             <li>
                                 The{' '}
-                                <a href={`/vegetables/${veggie.id}`}>
+                                <a href={`/veggies/${veggie.id}`}>
                                     {veggie.name}
                                 </a>{' '}
                                 is {veggie.color} <br></br>
@@ -22,8 +22,8 @@ class Index extends React.Component {
                                     ? `It is ready to eat`
                                     : `It is not ready to eat `}
                                 <br />
-                                <a href={`/vegetables/${veggie._id}/edit`}>Edit</a>
-                                <form action={`/vegetables/${veggie._id}?_method=DELETE`} method="POST">
+                                <a href={`/veggies/${veggie._id}/edit`}>Edit</a>
+                                <form action={`/veggies/${veggie._id}?_method=DELETE`} method="POST">
                                     <input type="submit" value="DELETE" />
                                 </form>
                             </li>

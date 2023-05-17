@@ -11,7 +11,7 @@ class Show extends React.Component {
           The {veg.name} is {veg.color}
           {veg.readyToEat? '. Its is ready to eat' : '. It is not ready to eat... Cant touch this' }
           <nav>
-                    <a href="/vegetables">Back to Veggies</a>
+                    <a href="/veggies">Back to Veggies</a>
                 </nav>
         </div>
      )

@@ -80,7 +80,7 @@ router.get('/:id/edit', (req, res)=>{
 router.get('/:id', (req, res)=>{
     Veggies.findById(req.params.id, (err, foundVeggie)=>{
         res.render('vegetables/Show', {
-            veggie:foundVeggie
+            veg:foundVeggie
         })
     })
 })
