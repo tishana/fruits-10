@@ -105,5 +105,5 @@ app.use('/veggies', veggiesController)
 
 // Listen...
 app.listen(PORT, () => {
-    console.log(`Jigglypuuuuf, Jigglyyyyypuuuuuuuf on ${port}`)
+    console.log(`Jigglypuuuuf, Jigglyyyyypuuuuuuuf on ${PORT}`)
 })
