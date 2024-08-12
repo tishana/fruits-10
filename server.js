@@ -7,9 +7,8 @@ const methodOverride = require('method-override')
 // Instantiate express...
 const app = express()
 // Other variables...
-const port = 3000
-// Add dotenv
-require('dotenv').config()
+const PORT = process.env.PORT || 3001;
+
 
 const fruitsController = require('./controllers/fruits')
 const veggiesController = require('./controllers/veggies')
@@ -105,6 +104,6 @@ app.use('/veggies', veggiesController)
 
 
 // Listen...
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Jigglypuuuuf, Jigglyyyyypuuuuuuuf on ${port}`)
 })
